@@ -1,0 +1,849 @@
+{\rtf1\ansi\ansicpg936\cocoartf1404\cocoasubrtf340
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset134 STHeitiSC-Light;\f2\fnil\fcharset0 Menlo-Regular;
+\f3\fnil\fcharset0 Menlo-Bold;\f4\fnil\fcharset134 PingFangSC-Regular;}
+{\colortbl;\red255\green255\blue255;\red43\green131\blue159;\red255\green0\blue0;\red204\green51\blue102;
+\red0\green128\blue0;\red164\green8\blue0;\red92\green38\blue153;\red46\green13\blue110;\red196\green26\blue22;
+\red170\green13\blue145;\red63\green110\blue116;\red206\green59\blue0;\red255\green83\blue8;\red217\green11\blue0;
+\red199\green141\blue0;\red254\green112\blue56;\red255\green39\blue18;\red0\green0\blue255;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww18500\viewh12160\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 d
+\f1\b\fs48 \'b1\'ea\'c7\'a9\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs36 \cf0 UILabel *lab = [[UILabel alloc] init];\
+lab.frame  =  CGRectMake(100,200,100,50) ;   //(\'bf\'f2\'bc\'dc\'ce\'bb\'d6\'c3\'b4\'f3\'d0\'a1)\
+lab.backgroundColor  =   [UIColor darkGrayColor] ;   //(\'b1\'b3\'be\'b0\'d1\'d5\'c9\'ab)\
+
+\fs28 l
+\f2\b0 \CocoaLigature0 lab.\cf2 font\cf0   =   [\cf2 UIFont\cf0  \cf2 systemFontOfSize\cf0 :17] ;
+\f1\b\fs36 \CocoaLigature1  //(\'d7\'d6\'cc\'e5\'b4\'f3\'d0\'a1)                     \
+lab.textColor   =   [UIColor redColor] ;    //(\'d7\'d6\'cc\'e5\'d1\'d5\'c9\'ab)                       \
+lab.textAlignment   =   NSTextAlignmentCenter ;  // (\'b6\'d4\'c6\'eb\'b7\'bd\'ca\'bd)         \
+lab.numberOfLines   =   0   ;//   (\'ce\'c4\'d7\'d6\'d0\'d0\'ca\'fd)                                        \
+lab.shadowColor  =   [UIColor blueColor] ;//    (\'d2\'f5\'d3\'b0\'d1\'d5\'c9\'ab)           \
+lab.shadowOffset   =  CGSizeMake(1,1) ;//    (\'d2\'f5\'d3\'b0\'c6\'ab\'cf\'f2\'b5\'c4\'b7\'bd\'cf\'f2)\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\b0 \cf0 \CocoaLigature0 lab.\cf2 text\cf0   =   \cf3 @"
+\f1 \'ea\'c7\'b3\'c6
+\f2 "\cf0  ;\
+[\cf4 self\cf0 .view addSubview:lab];
+\f1\b\fs48 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs24 \cf0 \
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs48 \cf0 \'ce\'c4\'b1\'be\'bf\'f2\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs36 \cf0 UITextField  
+\f2\b0 \CocoaLigature0 *
+\f1\b \CocoaLigature1 textField = [[UITextField alloc] init]
+\f2\b0 \CocoaLigature0 ;
+\f1\b \CocoaLigature1 \
+textField.frame  =   CGRectMake(50,100,60,30);//       (\'bf\'f2\'bc\'dc\'ce\'bb\'d6\'c3\'b4\'f3\'d0\'a1) \
+textField.borderStyle   =    UITextBorderStyleRoundedRect;//        (\'b1\'df\'bf\'f2\'b7\'e7\'b8\'f1)\
+textField.backgroundColor    =  [UIColor lightGrayColor] ;//      (\'ce\'c4\'b1\'be\'bf\'f2\'b1\'b3\'be\'b0\'d1\'d5\'c9\'ab)\
+textField.textColor    =   [UIColor redColor] ;//     (\'ce\'c4\'d7\'d6\'d1\'d5\'c9\'ab)\
+textField.font    =   [UIFont systemFontSize] ;//    (\'d7\'d6\'cc\'e5\'b4\'f3\'d0\'a1)\
+textField.textAlignment   =    NSTextAlignmentCenter;//     (\'b6\'d4\'c6\'eb\'b7\'bd\'ca\'bd)\
+textField.placeholder   =   
+\f2\b0 \cf3 \CocoaLigature0 @"
+\f1 \'c7\'eb\'ca\'e4\'c8\'eb\'c4\'e3\'b5\'c4\'c3\'dc\'c2\'eb
+\f2 "
+\f1\b \cf0 \CocoaLigature1 ;//     (\'cc\'e1\'ca\'be\'c4\'da\'c8\'dd,\'b5\'e3\'bb\'f7\'ca\'e4\'c8\'eb\'bb\'e1\'cf\'fb\'ca\'a7)\
+textField.clearButtonMode   =   UITextFieldViewModeWhileEditing ;//   (\'ce\'c4\'b1\'be\'bf\'f2\'c4\'a9\'ce\'b2\'d0\'a1xx,\'d3\'c3\'d3\'da\'c7\'e5\'bf\'d5\'cb\'f9\'d0\'b4\'c4\'da\'c8\'dd)\
+textField.secureTextEntry   =   YES ;//  (\'b0\'b2\'c8\'ab\'ca\'e4\'c8\'eb,\'d3\'c3\'d3\'da\'c3\'dc\'c2\'eb\'ca\'e4\'c8\'eb)\
+textField.text   =   
+\f2\b0\fs28 \cf3 \CocoaLigature0 @"
+\f1 \'ce\'d2\'b5\'c4\'c3\'dc\'c2\'eb
+\f2 "
+\f1\b\fs36 \cf0 \CocoaLigature1 ;//   (\'c0\'ef\'c3\'e6\'b1\'be\'c0\'b4\'b5\'c4\'ce\'c4\'d7\'d6,\'bf\'c9\'d2\'d4\'c9\'be\'b3\'fd) \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature0 [textField addTarget:self action:@selector(Down) forControlEvents:UIControlEventEditingDidEndOnExit] \CocoaLigature1 ;//\CocoaLigature0  (\'b5\'e3\'bb\'f7return\'c8\'c3\'bc\'fc\'c5\'cc\'cf\'c2\'c8\'a5)\
+textField.returnKeyType = UIReturnKeyGo\CocoaLigature1 ;//\CocoaLigature0  (\'b8\'c4\'b1\'e4return\'bc\'fc\'b5\'c4\'c0\'e0\'d0\'cd)\
+textField.keyboardType = UIKeyboardTypeNamePhonePad \CocoaLigature1 ;//\CocoaLigature0 (\'b8\'c4\'b1\'e4\'bc\'fc\'c5\'cc\'b5\'c4\'c0\'e0\'d0\'cd)\CocoaLigature1 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\b0 \cf0 \CocoaLigature0 [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :
+\f1\b textField
+\f2\b0 ];
+\f1\b\fs48 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+\cf0 \
+\'cd\'bc\'c6\'ac\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\b0\fs36 \cf0 \CocoaLigature0  \cf2 UIImageView\cf0  *imgview = [[\cf2 UIImageView\cf0  \cf2 alloc\cf0 ]\cf2 initWithFrame\cf0 :\cf2 CGRectMake\cf0 (100, 50, 100, 100)];\
+ imgview.\cf2 image\cf0  = [\cf2 UIImage\cf0  \cf2 imageNamed\cf0 :\cf3 @"name"\cf0 ];\
+ [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :imgview];
+\f1\b\fs40 \CocoaLigature1 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs48 \cf0 \'b0\'b4\'c5\'a5\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\fs36 \cf0 UIButton *btn = [UIButton buttonWithType:UIButtonTypeSystem]
+\f2\b0 \CocoaLigature0 ;
+\f1\b \CocoaLigature1 \
+btn.frame  =  CGRectMake(100,200,60,30) ;// (\'bf\'f2\'bc\'dc\'ce\'bb\'d6\'c3\'b4\'f3\'d0\'a1)\
+[btn setTitle:
+\f2\b0 \cf3 \CocoaLigature0 @"dian"
+\f1\b \cf0 \CocoaLigature1   forState:UIControlStateNormal];//  (\'b0\'b4\'c5\'a5\'c9\'cf\'b5\'c4\'ce\'c4\'d7\'d6)\
+btn.backgroundColor  =  [UIColor redColor];//(\'b0\'b4\'c5\'a5\'b1\'b3\'be\'b0\'d1\'d5\'c9\'ab)\
+btn.tintColor   =   [UIColor blackColor] ;//   (\'b0\'b4\'c5\'a5\'c9\'cf\'ce\'c4\'d7\'d6\'d1\'d5\'c9\'ab)\
+[btn setBackgroundImage :[UIImage imageNamed
+\fs28 :
+\f2\b0 \cf3 \CocoaLigature0 @"1"
+\f1\b\fs36 \cf0 \CocoaLigature1 ] forState:\
+UIControlStateNormal]   ;// (\'b0\'b4\'c5\'a5\'b1\'b3\'be\'b0\'cd\'bc\'c6\'ac)\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+\cf0 \CocoaLigature0 [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside]; 
+\f2\b0 \cf5 //(
+\f1 \'b8\'f8\'b0\'b4\'c5\'a5\'cc\'ed\'bc\'d3\'b7\'bd\'b7\'a8
+\f2 )\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+\cf0 [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :
+\f1\b btn 
+\f2\b0 ];\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\f1\b\fs40 \cf0 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs48 \cf0 \'ca\'d3\'cd\'bc
+\fs40 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs36 \cf0 UIView *vi = [[UIView alloc]init]\
+View.backgroundColor = [UIColor yellowColor] 
+\f2\b0 ;
+\f1\b \CocoaLigature1 //\CocoaLigature0  (\'b1\'b3\'be\'b0\'d1\'d5\'c9\'ab)\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\b0 \cf0 [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :
+\f1\b vi 
+\f2\b0 ];
+\f1\b\fs40 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs48 \cf0 \'b6\'af\'bb\'ad\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs40 \cf0 [UIView beginAnimations:nil context:nil]  \CocoaLigature1 ;//\CocoaLigature0 \'b6\'af\'bb\'ad\'bf\'aa\'ca\'bc\
+[UIView setAnimationDuration:2]   \CocoaLigature1 ;//\CocoaLigature0 \'b6\'af\'bb\'ad\'b3\'d6\'d0\'f8\'ca\'b1\'bc\'e4\
+[UIView setAnimationDelay:3]   \CocoaLigature1 ;//\CocoaLigature0 \'b6\'af\'bb\'ad\'d1\'d3\'b3\'d9\'bc\'b8\'c3\'eb\'d6\'b4\'d0\'d0\
+[UIView setAnimationCurve:UIViewAnimationCurveLinear] \CocoaLigature1 ;//\CocoaLigature0  \'b6\'af\'bb\'ad\'d4\'cb\'b6\'af\'c7\'fa\'cf\'df(\'cf\'c8\'bf\'ec\'ba\'f3\'c2\'fd \'d4\'c8\'cb\'d9\'b5\'c8)\
+[UIView commitAnimations] \CocoaLigature1 ;//\CocoaLigature0 \'b6\'af\'bb\'ad\'bd\'e1\'ca\'f8\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\b0\fs36 \cf6 \ul \ulc6 //
+\f1 \'b6\'af\'bb\'ad
+\f2  
+\f1 \'b7\'bd\'b7\'a82
+\f2 \cf0 \ulnone \
+[\cf2 UIView\cf0  \cf2 animateWithDuration\cf0 :1 \cf2 animations\cf0 :^\{\
+        imageView.\cf2 alpha\cf0  = 0.3;\
+ \} \cf2 completion\cf0 :^(\cf4 BOOL\cf0  finished) \{\
+ \cf5 //
+\f1 \'b6\'af\'bb\'ad\'bd\'e1\'ca\'f8
+\f2 \cf0 \
+\cf2 AppDelegate\cf0  *appDelegate = (\cf2 AppDelegate\cf0  *)[\cf2 UIApplication\cf0  \cf2 sharedApplication\cf0 ].\cf2 delegate\cf0 ;\
+[\cf2 UIView\cf0  \cf2 transitionWithView\cf0 :appDelegate.\cf2 window\cf0  \cf2 duration\cf0 :1 \cf2 options\cf0 :\cf2 UIViewAnimationOptionTransitionCurlUp\cf0  \cf2 animations\cf0 :\cf4 nil\cf0  \cf2 completion\cf0 :\cf4 nil\cf0 ];\
+   \}];
+\fs48 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+\cf5 //
+\f3\b catransition 
+\f2\b0\fs36 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+\cf0  \cf2 _imageView\cf0 .\cf2 image\cf0  = [\cf2 UIImage\cf0  \cf2 imageNamed\cf0 :imageName];\
+ \cf5 //
+\f1 \'bb\'f1\'b5\'c3\'d2\'bb\'b8\'f6\'b6\'af\'bb\'ad\'b6\'d4\'cf\'f3
+\f2 \cf0 \
+ \cf2 CATransition\cf0 * transition = [\cf2 CATransition\cf0  \cf2 animation\cf0 ];\
+ transition.\cf2 type\cf0  = \cf3 @"cube"\cf0 ;\
+ \cf5 //
+\f1 \'b6\'af\'bb\'ad\'b5\'c4\'cb\'c4\'d6\'d6\'b7\'bd\'cf\'f2
+\f2 \cf0 \
+ transition.\cf2 subtype\cf0  = \cf2 kCATransitionMoveIn\cf0 ;\
+ transition.\cf2 duration\cf0  = 0.35f;\
+ [\cf2 _imageView\cf0 .\cf2 layer\cf0  \cf2 addAnimation\cf0 :transition \cf2 forKey\cf0 :\cf3 @"transition"\cf0 ];\
+\cf5 /* 2.
+\f1 \'d3\'c3\'d7\'d6\'b7\'fb\'b4\'ae\'b1\'ed\'ca\'be
+\f2 \
+pageCurl            
+\f1 \'cf\'f2\'c9\'cf\'b7\'ad\'d2\'bb\'d2\'b3
+\f2  pageUnCurl          
+\f1 \'cf\'f2\'cf\'c2\'b7\'ad\'d2\'bb\'d2\'b3
+\f2 \
+rippleEffect        
+\f1 \'b5\'ce\'cb\'ae\'d0\'a7\'b9\'fb
+\f2    suckEffect         
+\f1 \'ca\'d5\'cb\'f5\'d0\'a7\'b9\'fb\'a3\'ac\'c8\'e7\'d2\'bb\'bf\'e9\'b2\'bc
+\f2 cube                
+\f1 \'c1\'a2\'b7\'bd\'cc\'e5\'d0\'a7\'b9\'fb
+\f2 oglFlip             
+\f1 \'c9\'cf\'cf\'c2\'b7\'ad\'d7\'aa\'d0\'a7\'b9\'fb
+\f2 \
+*/\
+\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f1\b\fs48 \cf0 \'ca\'d3\'cd\'bc\'bf\'d8\'d6\'c6\'c6\'f7\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs40 \cf0 \'c0\'e0\'c3\'fb *a = [[\'c0\'e0\'c3\'fb alloc]init]\
+self.window.rootViewController = a\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs48 \cf0 \
+\'bb\'ac\'b6\'af\'cc\'f5\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs40 \cf0 UISlider *Slider = [[UISlider alloc]initWithFrame:CGRectMake(100,100,200,40)]\CocoaLigature1 ;//\CocoaLigature0  (
+\fs48 \'b4\'b4\'bd\'a8
+\fs40 \'bb\'ac\'b6\'af\'cc\'f5)\
+Slider.minimumValue = 0.0\CocoaLigature1 ;//\CocoaLigature0     (\'bb\'ac\'b6\'af\'cc\'f5\'bb\'ac\'b6\'af\'d7\'ee\'d0\'a1\'b7\'b6\'ce\'a7) (\'c4\'ac\'c8\'cf\'d6\'b5\'ce\'aa0.0~1.0)\
+Slider.maximumValue = 0.5\CocoaLigature1 ;//\CocoaLigature0   (\'bb\'ac\'b6\'af\'cc\'f5\'bb\'ac\'b6\'af\'d7\'ee\'b4\'f3\'b7\'b6\'ce\'a7)\
+(Slider.value  = 50\CocoaLigature1 ;//\CocoaLigature0 (\'bb\'ac\'bf\'e9\'b5\'b1\'c7\'b0\'d6\'b5,\'c4\'ac\'c8\'cf\'ce\'aa0.0)\
+[slider addTarget:self action:@selector(sliderMethod:) forControlEvents:UIControlEventValueChanged];\
+[self.view addSubview:slider]\CocoaLigature1 ;//\CocoaLigature0  (\'cc\'ed\'bc\'d3\'b5\'bdview\'c9\'cf)\
+\
+\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs48 \cf0 \'d1\'a1\'cf\'ee\'bf\'a8
+\fs40 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\b0\fs36 \cf2 UISegmentedControl\cf0  *segmentControl = [[\cf2 UISegmentedControl\cf0  \cf2 alloc\cf0 ] \cf2 initWithItems\cf0 :@[\cf3 @"
+\f1 \'b9\'ab\'b9\'b2\'d7\'ca\'d4\'b4
+\f2 "\cf0 ,\cf3 @"
+\f1 \'b8\'f6\'c8\'cb\'d7\'ca\'d4\'b4
+\f2 "\cf0 ]];\
+segmentControl.\cf2 frame\cf0  = \cf2 CGRectMake\cf0 (0, 0, 130, 30);\
+[segmentControl \cf2 addTarget\cf0 :\cf4 self\cf0  \cf2 action\cf0 :\cf4 @selector\cf0 (changeMenu:) \cf2 forControlEvents\cf0 :\cf2 UIControlEventValueChanged\cf0 ];\
+segmentControl.\cf2 selectedSegmentIndex\cf0  = 0;
+\f0 \
+
+\f2 [
+\f0 self.view addSubview:
+\f2 segmentControl];\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f1\b\fs40 \cf0 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs48 \cf0 \'bf\'aa\'b9\'d8\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs36 \cf0 UISwitch *Switch = [UISwitch alloc]initWithFrame:CGRectMake(100,100,50,50)]\CocoaLigature1 ;//\CocoaLigature0 (\'b4\'b4\'bd\'a8\'bf\'aa\'b9\'d8)\
+Switch.on =YES\CocoaLigature1 ;//\CocoaLigature0  (\'bf\'aa\'b9\'d8\'b5\'c4\'c6\'f0\'ca\'bc\'d7\'b4\'cc\'ac)\
+Switch.onTintColor = [UIColor redColor]\CocoaLigature1 ;//\CocoaLigature0 (\'bf\'aa\'b9\'d8\'b1\'b3\'be\'b0\'d1\'d5\'c9\'ab)\
+Switch.tintColor = [UIColor blackColor]\CocoaLigature1 ;//\CocoaLigature0  (\'bf\'aa\'b9\'d8\'b9\'d8\'b1\'d5\'ca\'b1\'b1\'df\'bf\'f2\'d1\'d5\'c9\'ab)\
+[mySwitch addTarget:self action:@selector(SwitchMehtod:)   forControlEvents:UIControlEventValueChanged];  \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\b0 \cf0 [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :
+\f1\b Switch 
+\f2\b0 ];
+\f1\b\fs40 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs48 \cf0 \'be\'d5\'bb\'a8\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\b0\fs36 \cf2 UIActivityIndicatorView\cf0  
+\f1\b *
+\f2\b0 JuHua = [[\cf2 UIActivityIndicatorView\cf0   \cf2 alloc\cf0 ]\cf2 initWithActivityIndicatorStyle\cf0 :\cf2 UIActivityIndicatorViewStyleWhite\cf0 ];\cf5 //  (
+\f1 \'b4\'b4\'bd\'a8\'be\'d5\'bb\'a8\'b2\'a2\'d1\'a1\'d4\'f1\'b7\'e7\'b8\'f1
+\f2 )
+\f1\b \cf0 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+\cf0 JuHua.frame = CGRectMake(100,	100,80,80)\CocoaLigature1 ;//\CocoaLigature0 (\'c9\'e8\'d6\'c3\'d7\'f8\'b1\'ea\'b4\'f3\'d0\'a1)\
+[self.view addSubview:JuHua]\CocoaLigature1 ;//\CocoaLigature0   (\'cc\'ed\'bc\'d3\'be\'d5\'bb\'a8\'b5\'bd\'ca\'d3\'cd\'bc)\
+[JuHua startAnimating]  \CocoaLigature1 ;//\CocoaLigature0  (\'c8\'c3\'be\'d5\'bb\'a8\'bf\'aa\'ca\'bc\'d7\'aa,\'b2\'bb\'d7\'aa\'b5\'c4\'bb\'b0\'c4\'ac\'c8\'cf\'ca\'c7\'d2\'fe\'b2\'d8\'b5\'c4)\
+JuHua.hidesWhenStopped  = NO\CocoaLigature1 ;//\CocoaLigature0  (\'c8\'c3\'be\'d5\'bb\'a8\'cd\'a3\'d7\'aa\'ba\'f3\'b2\'bb\'d2\'fe\'b2\'d8)\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\b0 \cf0 [JuHua performSelector:@selector(stopAnimating) withObject:nil afterDelay:3]
+\b \CocoaLigature1 ;//
+\b0 \CocoaLigature0  (\'c8\'c3\'be\'d5\'bb\'a8\'d7\'aa\'c8\'fd\'c3\'eb\'ba\'f3\'cd\'a3\'cf\'c2\'c0\'b4)
+\b \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\b0 \cf0 [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :
+\f1\b JuHua 
+\f2\b0 ];
+\f1\b\fs40 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+\cf0 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs48 \cf0 \'bd\'f8\'b6\'c8\'cc\'f5
+\fs40 \
+UIProgressView *ProgressView = [UIProgressView alloc]initWithProgressViewStyle:UIProgressViewStyleDefault]\CocoaLigature1 ;//\CocoaLigature0  (\'b4\'b4\'bd\'a8\'bd\'f8\'b6\'c8\'cc\'f5)\
+ProgressView.frame = CGRectMake(100,100,100,100)\CocoaLigature1 ;//\CocoaLigature0  (\'c9\'e8\'d6\'c3\'d7\'f8\'b1\'ea\'b4\'f3\'d0\'a1)\
+ProgressView.progress = 0.5 \CocoaLigature1 ;//\CocoaLigature0 (\'c9\'e8\'d6\'c3\'b4\'f2\'bf\'aa\'ca\'b1\'b4\'a6\'b5\'c4\'ce\'bb\'d6\'c3)\
+[self.view addSubview:ProgressView] \CocoaLigature1 ;//\CocoaLigature0 (\'cc\'ed\'bc\'d3\'bd\'f8\'b6\'c8\'cc\'f5\'b5\'bd\'ca\'d3\'cd\'bc)\
+
+\fs48 \'b6\'a8\'ca\'b1\'c6\'f7
+\fs40 \
+NSTimer *timer = [NSTimer  scheduledTimerWithTimeInterval:(1) target:self selector:@selector(onTimer) userInfo:nil repeats:YES]\CocoaLigature1 ;//\CocoaLigature0   (\'c9\'e8\'d6\'c3\'d2\'bb\'b8\'f6\'b6\'a8\'ca\'b1\'c6\'f7 \'c3\'bf\'bc\'e4\'b8\'f4\'d2\'bb\'c3\'eb\'b5\'f7\'d3\'c3\'d2\'bb\'b4\'ceonTime\'b7\'bd\'b7\'a8)\
+[_timer fire]\CocoaLigature1 ;//\CocoaLigature0  (\'c8\'c3\'b6\'a8\'ca\'b1\'c6\'f7\'c1\'a2\'bc\'b4\'d6\'b4\'d0\'d0,\'b2\'bb\'d3\'c3\'b5\'c8\'c9\'cf\'be\'e4\'b5\'c4Interval)\
+[_timer invalidate]\CocoaLigature1 ;//\CocoaLigature0  (\'b7\'cf\'b3\'fd\'b6\'a8\'ca\'b1\'c6\'f7)\
+_timer =nil \CocoaLigature1 ;//\CocoaLigature0  (\'b7\'cf\'b3\'fd\'b6\'a8\'ca\'b1\'c6\'f7\'ba\'f3\'d2\'aa\'c8\'c3\'b6\'a8\'ca\'b1\'c6\'f7\'d6\'b8\'cf\'f2\'bf\'d5)\
+
+\fs48 \'be\'af\'b8\'e6\'bf\'f2alertview \
+///////////////////////\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs40 \cf0 UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"\'ce\'c2\'dc\'b0\'cc\'e1\'ca\'be" message:@"\'c3\'dc\'c2\'eb\'b4\'ed\'ce\'f3" delegate:nil cancelButtonTitle:nil otherButtonTitles:@"OK", nil]\CocoaLigature1 ;\
+\CocoaLigature0 [alertView show]\CocoaLigature1 ;\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs24 \cf0 //////////////////\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\b0 \cf0 \CocoaLigature0  \
+/////////////////////////////////////
+\fs48 \
+
+\fs24 \cf7 UIAlertController\cf0  *myalert=[\cf7 UIAlertController\cf0  \cf8 alertControllerWithTitle\cf0 :\cf9 @"
+\f4 \'be\'af\'b8\'e6
+\f2 "\cf0  \cf8 message\cf0 :\cf9 @"
+\f4 \'d3\'c3\'bb\'a7\'c7\'e9\'b1\'a8\'b2\'bb\'d4\'da
+\f2 "\cf0  \cf8 preferredStyle\cf0 :\cf8 UIAlertControllerStyleAlert\cf0 ];\
+                \cf7 UIAlertAction\cf0  *myaction=[\cf7 UIAlertAction\cf0  \cf8 actionWithTitle\cf0 :\cf9 @"
+\f4 \'b9\'d8\'c3\'c5
+\f2 "\cf0  \cf8 style\cf0 :\cf8 UIAlertActionStyleDestructive\cf0  \cf8 handler\cf0 :\cf10 nil\cf0 ];\
+                [myalert \cf8 addAction\cf0 :myaction];\
+                [\cf10 self\cf0  \cf8 presentViewController\cf0 :myalert \cf8 animated\cf0 :\cf10 YES\cf0  \cf8 completion\cf0 :\cf10 nil\cf0 ];\
+/////////////////////////////////////\
+\
+                \cf7 UIAlertController\cf0  *myalert=[\cf7 UIAlertController\cf0  \cf8 alertControllerWithTitle\cf0 :\cf9 @"
+\f4 \'b3\'c9\'b9\'a6
+\f2 "\cf0  \cf8 message\cf0 :\cf9 @"
+\f4 \'d7\'a2\'b2\'e1\'b3\'c9\'b9\'a6
+\f2 "\cf0  \cf8 preferredStyle\cf0 :\cf8 UIAlertControllerStyleAlert\cf0 ];\
+                \cf7 UIAlertAction\cf0  *myaction=[\cf7 UIAlertAction\cf0  \cf8 actionWithTitle\cf0 :\cf9 @"
+\f4 \'b4\'f2\'bf\'aa\'ca\'e9\'bc\'ae\'c4\'bf\'c2\'bc\'d2\'b3
+\f2 "\cf0  \cf8 style\cf0 :\cf8 UIAlertActionStyleDestructive\cf0  \cf8 handler\cf0 :^(\cf7 UIAlertAction\cf0  * \cf10 _Nonnull\cf0  action)\{\
+                    \cf11 LogInViewController\cf0  *LogInVC=[\cf10 self\cf0 .\cf7 storyboard\cf0  \cf8 instantiateViewControllerWithIdentifier\cf0 :\cf9 @"LogInVC_SBID"\cf0  ];\
+                    [\cf10 self\cf0  \cf8 presentViewController\cf0 :LogInVC \cf8 animated\cf0 :\cf10 YES\cf0  \cf8 completion\cf0 :\cf10 nil\cf0 ];\
+                    \
+                \}];\
+                [myalert \cf8 addAction\cf0 :myaction];\
+                [\cf10 self\cf0  \cf8 presentViewController\cf0 :myalert \cf8 animated\cf0 :\cf10 YES\cf0  \cf8 completion\cf0 :\cf10 nil\cf0 ];
+\f1\b\fs40 \CocoaLigature1 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs48 \cf0 \CocoaLigature0 \'d0\'d0\'ce\'aa\'b1\'ed\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs40 \cf0 UIActionSheet *sheet = [[UIActionSheet alloc] initWithTitle:@"\'cf\'c2\'d4\'d8" delegate:nil cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"\'b1\'a3\'b4\'e6" otherButtonTitles:@"Other",@"Others", nil];\
+[sheet showInView:self.view]\CocoaLigature1 ;//\CocoaLigature0 (\'b2\'bb\'d2\'aa\'d0\'b4\'d4\'daviewDidLoad\'b7\'bd\'b7\'a8\'d6\'d0,\'d2\'f2\'ce\'aadid load\'b7\'bd\'b7\'a8\'d6\'b4\'d0\'d0\'cd\'eaview\'b2\'c5\'bb\'e1\'b4\'b4\'bd\'a8)\
+\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\b0\fs48 \cf12 \'b5\'bc\'ba\'bd\'c0\'b8
+\b \cf0 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\b0\fs28 \cf2 UIImageView\cf0  *img=[[\cf2 UIImageView\cf0  \cf2 alloc\cf0 ]\cf2 initWithFrame\cf0 :\cf2 CGRectMake\cf0 (0, 0, 320, 69)];\
+    img.\cf2 image\cf0 = [\cf2 UIImage\cf0  \cf2 imageNamed\cf0 :\cf3 @"1"\cf0 ];\
+    [\cf4 self\cf0 .\cf2 navigationController\cf0 .\cf2 navigationBar\cf0  \cf2 setBackgroundImage\cf0 :img.\cf2 image\cf0  \cf2 forBarMetrics\cf0 :\cf2 UIBarMetricsDefault\cf0  ];\
+    \cf2 UIBarButtonItem\cf0  *abtnitem = [[\cf2 UIBarButtonItem\cf0  \cf2 alloc\cf0 ]\cf2 initWithTitle\cf0 :\cf3 @"aa"\cf0  \cf2 style\cf0 :\cf2 UIBarButtonItemStyleDone\cf0  \cf2 target\cf0 :\cf4 self\cf0  \cf2 action\cf0 :\cf4 @selector\cf0 (abaritemclick)];\
+    \cf4 self\cf0 .\cf2 navigationItem\cf0 .\cf2 rightBarButtonItem\cf0  = abtnitem;
+\f0\fs40 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+\cf12 UIScrollView\cf0 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\fs36 \cf5 //
+\f1 \'d0\'e8\'d2\'aa\'d0\'ad\'d2\'e9\'ba\'cd\'ca\'b5\'cf\'d6\'b4\'fa\'c0\'ed\'b7\'bd\'b7\'a8
+\f0\fs40 \cf0 \
+
+\f2\fs36 \cf2 UIScrollView\cf0  *scrollView = [[\cf2 UIScrollView\cf0  \cf2 alloc\cf0 ] \cf2 initWithFrame\cf0 :\cf2 CGRectMake\cf0 (0, 64, 320, 100)];\
+    scrollView.\cf2 contentSize\cf0  = \cf2 CGSizeMake\cf0 (320 * 2, 100);\
+    scrollView.\cf2 pagingEnabled\cf0  = \cf4 YES\cf0 ;\
+    scrollView.\cf2 delegate\cf0  = \cf4 self\cf0 ;\
+    scrollView.\cf2 backgroundColor\cf0  = [\cf2 UIColor\cf0  \cf2 yellowColor\cf0 ];\
+    scrollView.\cf2 showsHorizontalScrollIndicator\cf0  = \cf4 NO\cf0 ;\
+    [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :scrollView];\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+\cf13 UIPageControl\cf0 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\fs36 \cf5 //
+\f1 \'cc\'ed\'bc\'d3
+\f2 PageControl\cf0 \
+ \cf2 UIPageControl\cf0  *pageControl = [[\cf2 UIPageControl\cf0  \cf2 alloc\cf0 ] \cf2 init\cf0 ];
+\fs48 \
+ 
+\fs36 pageControl.\cf2 numberOfPages\cf0  = 4;\
+ pageControl.\cf2 frame\cf0  = \cf2 CGRectMake\cf0 (10, 100, 300, 50);\
+ [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :pageControl];\
+ pageControl.\cf2 backgroundColor\cf0  = [\cf2 UIColor\cf0  \cf2 redColor\cf0 ];\
+ pageControl.\cf2 currentPageIndicatorTintColor\cf0  = [\cf2 UIColor\cf0  \cf2 yellowColor\cf0 ];
+\f0\fs40 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+\cf14 UIDatePicker\cf0 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs36 \cf0 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2 \cf0 - (\cf4 void\cf0 )viewDidLoad\
+\{   [\cf4 super\cf0  \cf2 viewDidLoad\cf0 ];\
+    \cf2 UIDatePicker\cf0  *datepicker = [[\cf2 UIDatePicker\cf0  \cf2 alloc\cf0 ]\cf2 initWithFrame\cf0 :\cf2 CGRectMake\cf0 (40, 60, 240, 163)];\
+    datepicker.\cf2 datePickerMode\cf0  = \cf2 UIDatePickerModeDate\cf0 ;\
+    [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :datepicker];\
+    \cf2 NSDateFormatter\cf0  *formatter = [[\cf2 NSDateFormatter\cf0  \cf2 alloc\cf0 ]\cf2 init\cf0 ];\
+    [formatter \cf2 setDateFormat\cf0 :\cf3 @"YYYY-MM-dd"\cf0 ];\
+    \cf2 NSString\cf0   *astr = [formatter \cf2 stringFromDate\cf0 :datepicker.\cf2 date\cf0 ];\
+   \
+    [datepicker \cf2 addTarget\cf0 :\cf4 self\cf0  \cf2 action\cf0 :\cf4 @selector\cf0 (timechange:) \cf2 forControlEvents\cf0 :\cf2 UIControlEventValueChanged\cf0 ];\
+\}\
+-(\cf4 void\cf0 )timechange:(\cf4 id\cf0 )sender\
+\{ \cf2 UIDatePicker\cf0  *datepick = (\cf2 UIDatePicker\cf0  *)sender;\
+    \cf2 NSDateFormatter\cf0  *formatter = [[\cf2 NSDateFormatter\cf0  \cf2 alloc\cf0 ]\cf2 init\cf0 ];\
+    [formatter \cf2 setDateFormat\cf0 :\cf3 @"YYYY-MM-dd"\cf0 ];\
+    \cf2 NSString\cf0  *astr = [formatter \cf2 stringFromDate\cf0 :datepick.\cf2 date\cf0 ];\
+    \cf2 NSLog\cf0 (\cf3 @"astr is  %@\\n"\cf0 ,astr);\
+\}\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f0\fs40 \cf0 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs48 \cf0 UIPickerView
+\fs40 \
+\
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\fs72 \cf15 UItableView
+\fs40 \cf0 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\fs36 \cf0 - (\cf4 void\cf0 )viewDidLoad\
+\{\
+[\cf4 super\cf0  \cf2 viewDidLoad\cf0 ];\
+[\cf4 self\cf0  \cf2 createtableview\cf0 ];\
+\}\
+-(\cf4 void\cf0 )createtableview\
+\{\
+    \cf2 UITableView\cf0  *atableview =  [[\cf2 UITableView\cf0  \cf2 alloc\cf0 ]\cf2 initWithFrame\cf0 :\cf4 self\cf0 .\cf2 view\cf0 .\cf2 frame\cf0  \cf2 style\cf0 :\cf2 UITableViewStyleGrouped\cf0 ];\
+    atableview.\cf2 delegate\cf0  = \cf4 self\cf0 ;\
+    atableview.\cf2 dataSource\cf0  = \cf4 self\cf0 ;\
+    [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :atableview];\
+\}\
+-(\cf2 NSInteger\cf0 )numberOfSectionsInTableView:(\cf2 UITableView\cf0  *)tableView\
+\{\cf4 return\cf0  1;\}\
+-(\cf2 NSInteger\cf0 )tableView:(\cf2 UITableView\cf0  *)tableView numberOfRowsInSection:(\cf2 NSInteger\cf0 )section\
+\{ \cf4 return\cf0  10;\}\
+-(\cf2 UITableViewCell\cf0  *)tableView:(\cf2 UITableView\cf0  *)tableView cellForRowAtIndexPath:(\cf2 NSIndexPath\cf0  *)indexPath\
+\{\
+   \cf4 static\cf0  \cf2 NSString\cf0  *cellid = \cf3 @"myid"\cf0 ;\
+    \cf2 UITableViewCell\cf0  *cell = [tableView \cf2 dequeueReusableCellWithIdentifier\cf0 :cellid];\
+    \cf4 if\cf0  (!cell) \{\
+        cell = [[\cf2 UITableViewCell\cf0  \cf2 alloc\cf0 ]\cf2 initWithStyle\cf0 :\cf2 UITableViewCellStyleDefault\cf0  \cf2 reuseIdentifier\cf0 :cellid];\
+    \}\
+    cell.\cf2 textLabel\cf0 .\cf2 text\cf0  = \cf3 @"aaa"\cf0 ;\
+    \cf4 return\cf0  cell;\
+\};
+\fs48 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\f0 \cf16 uicollectionview 1\cf0 \
+\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\fs36 \cf0 - (\cf4 void\cf0 )viewDidLoad\
+\{    \cf5 //
+\f1 \'bc\'d3\'c8\'eb\'b4\'fa\'c0\'ed\'ca\'b5\'cf\'d6\'b7\'bd\'b7\'a8\'be\'cd\'bf\'c9\'d2\'d4\'c0\'b2
+\f2 \cf0 \
+    [\cf4 super\cf0  \cf2 viewDidLoad\cf0 ];\
+ [\cf4 self\cf0  \cf2 creatcollectview\cf0 ];\
+\}\
+-(\cf4 void\cf0 )creatcollectview\
+\{\
+    \cf2 UICollectionViewFlowLayout\cf0  *leftFlowLayout = [[\cf2 UICollectionViewFlowLayout\cf0  \cf2 alloc\cf0 ] \cf2 init\cf0 ];\
+    \cf5 //
+\f1 \'b5\'a5\'d4\'aa\'b8\'f1\'b4\'f3\'d0\'a1
+\f2 \cf0 \
+    leftFlowLayout.\cf2 itemSize\cf0  = \cf2 CGSizeMake\cf0 (100, 130);\
+    \cf5 //
+\f1 \'c3\'bf\'d2\'bb\'d0\'d0\'a3\'a8
+\f2 \'97\'97
+\f1 \'a3\'a9\'b5\'c4\'b7\'d6\'bd\'e7\'cf\'df\'be\'e0\'c0\'eb
+\f2 \cf0 \
+    leftFlowLayout.\cf2 minimumLineSpacing\cf0  = 5;\
+    \cf5 //
+\f1 \'c3\'bf\'d2\'bb\'c1\'d0\'a3\'a8\'a3\'fc\'a3\'a9\'b5\'c4\'b7\'d6\'bd\'e7\'cf\'df\'be\'e0\'c0\'eb
+\f2 \cf0 \
+    leftFlowLayout.\cf2 minimumInteritemSpacing\cf0  = 5;\
+    \cf5 //
+\f1 \'c9\'e8\'d6\'c3
+\f2 UICollectionview
+\f1 \'b5\'c4\'d5\'b9\'ca\'be\'c7\'f8\'d3\'f2
+\f2 \cf0 \
+    \cf5 //
+\f1 \'c9\'cf\'a1\'a2\'d7\'f3\'a1\'a2\'cf\'c2\'a1\'a2\'d3\'d2
+\f2 \cf0 \
+    leftFlowLayout.\cf2 sectionInset\cf0  = \cf2 UIEdgeInsetsMake\cf0 (100, 5, 100, 5);\
+    \
+    \cf2 UICollectionView\cf0  *_leftView = [[\cf2 UICollectionView\cf0  \cf2 alloc\cf0 ] \cf2 initWithFrame\cf0 :\cf4 self\cf0 .\cf2 view\cf0 .\cf2 frame\cf0    \cf2 collectionViewLayout\cf0 :leftFlowLayout];\
+    _leftView.\cf2 backgroundColor\cf0  = [\cf2 UIColor\cf0  \cf2 yellowColor\cf0 ];\
+    _leftView.\cf2 delegate\cf0  = \cf4 self\cf0 ;\
+    _leftView.\cf2 dataSource\cf0  = \cf4 self\cf0 ;\
+    \cf5 //
+\f1 \'d7\'a2\'b2\'e1\'b5\'a5\'d4\'aa\'b8\'f1
+\f2 \cf0 \
+    [_leftView \cf2 registerClass\cf0 :[\cf2 UICollectionViewCell\cf0  \cf2 class\cf0 ] \cf2 forCellWithReuseIdentifier\cf0 :\cf3 @"mycell"\cf0 ];\
+    [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :_leftView];\
+\}\
+-(\cf2 NSInteger\cf0 )numberOfSectionsInCollectionView:(\cf2 UICollectionView\cf0  *)collectionView\
+\{\
+    \cf4 return\cf0  1;\
+\}\
+-(\cf2 NSInteger\cf0 )collectionView:(\cf2 UICollectionView\cf0  *)collectionView numberOfItemsInSection:(\cf2 NSInteger\cf0 )section\
+\{\
+    \cf4 return\cf0  10;\
+\}\
+-(\cf2 UICollectionViewCell\cf0  *)collectionView:(\cf2 UICollectionView\cf0  *)collectionView cellForItemAtIndexPath:(\cf2 NSIndexPath\cf0  *)indexPath\
+\{  \cf4 static\cf0  \cf2 NSString\cf0  *aa = \cf3 @"mycell"\cf0 ;\
+    \cf2 UICollectionViewCell\cf0  *cell = [collectionView \cf2 dequeueReusableCellWithReuseIdentifier\cf0 :aa \cf2 forIndexPath\cf0 :indexPath];\
+    cell.\cf2 backgroundColor\cf0  = [\cf2 UIColor\cf0  \cf2 redColor\cf0 ];\
+    \cf4 return\cf0  cell;\}\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\fs48 \cf17 UICollectionViewDelegateWaterfallLayout\cf0 \
+\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\fs28 \cf0 - (\cf4 void\cf0 )viewDidLoad\
+\{ \cf5 //
+\f1 \'bc\'d3\'c8\'eb\'b4\'fa\'c0\'ed\'ca\'b5\'cf\'d6\'b7\'bd\'b7\'a8\'be\'cd\'bf\'c9\'d2\'d4\'c0\'b2
+\f2 \cf18 #import \cf3 "UICollectionViewWaterfallLayout.h"\cf0     \
+[\cf4 super\cf0  \cf2 viewDidLoad\cf0 ];\
+ [\cf4 self\cf0  \cf2 creatcollectview\cf0 ];\
+\}\
+-(\cf4 void\cf0 )creatcollectview\
+\{\
+\cf2 UICollectionViewWaterfallLayout\cf0    *layout = [[\cf2 UICollectionViewWaterfallLayout\cf0  \cf2 alloc\cf0 ] \cf2 init\cf0 ];\
+layout.\cf2 sectionInset\cf0  = \cf2 UIEdgeInsetsMake\cf0 (100, 5, 100, 5);\
+  layout.\cf2 columnCount\cf0  = 2;\
+  layout.\cf2 delegate\cf0   = \cf4 self\cf0  ;\
+  layout.\cf2 itemWidth\cf0  = 150.0f;\
+  \cf2 UICollectionView\cf0  *_leftView = [[\cf2 UICollectionView\cf0  \cf2 alloc\cf0 ] \cf2 initWithFrame\cf0 :\cf4 self\cf0 .\cf2 view\cf0 .\cf2 frame\cf0    \cf2 collectionViewLayout\cf0 :layout];\
+_leftView.\cf2 delegate\cf0  = \cf4 self\cf0 ;\
+_leftView.\cf2 dataSource\cf0  = \cf4 self\cf0 ;\
+ [_leftView \cf2 registerClass\cf0 :[\cf2 UICollectionViewCell\cf0  \cf2 class\cf0 ] \cf2 forCellWithReuseIdentifier\cf0 :\cf3 @"mycell"\cf0 ];\
+  [_leftView \cf2 registerNib\cf0 :[\cf2 UINib\cf0  \cf2 nibWithNibName\cf0 :\cf3 @"customcell"\cf0  \cf2 bundle\cf0 :\cf4 nil\cf0 ] \cf2 forCellWithReuseIdentifier\cf0 :\cf3 @"acell"\cf0 ];\
+ [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :_leftView];\}\
+-(\cf2 NSInteger\cf0 )numberOfSectionsInCollectionView:(\cf2 UICollectionView\cf0  *)collectionView\
+\{ \cf4 return\cf0  1;\}\
+-(\cf2 NSInteger\cf0 )collectionView:(\cf2 UICollectionView\cf0  *)collectionView numberOfItemsInSection:(\cf2 NSInteger\cf0 )section\
+\{\cf4 return\cf0  10;\}\
+-(\cf2 UICollectionViewCell\cf0  *)collectionView:(\cf2 UICollectionView\cf0  *)collectionView cellForItemAtIndexPath:(\cf2 NSIndexPath\cf0  *)indexPath\
+\{  \cf2 UICollectionViewCell\cf0  *cell = [collectionView \cf2 dequeueReusableCellWithReuseIdentifier\cf0 : \cf3 @"mycell"\cf0  \cf2 forIndexPath\cf0 :indexPath];\
+        cell.\cf2 backgroundColor\cf0  = [\cf2 UIColor\cf0  \cf2 redColor\cf0 ];\
+   \cf4 return\cf0  cell ;\}\
+-(\cf2 CGFloat\cf0 )collectionView:(\cf2 UICollectionView\cf0  *)collectionView layout:(\cf2 UICollectionViewWaterfallLayout\cf0  *)collectionViewLayout heightForItemAtIndexPath:(\cf2 NSIndexPath\cf0  *)indexPath\
+\{\cf4 if\cf0  ( indexPath.\cf2 section\cf0  == 0)\
+\{\cf4 if\cf0  (indexPath.\cf2 row\cf0  == 0 ) \{\cf4 return\cf0  60   ;\}\
+  \cf4 else\cf0  \{\cf4 return\cf0  160;\}\}\
+    \cf4 else\cf0  \cf4 return\cf0  160;\}
+\fs48 \
+\pard\tx963\pardeftab963\pardirnatural\partightenfactor0
+
+\f0\fs72 \cf13 //Map
+\f1 \'b5\'d8\'cd\'bc
+\f0\fs40 \cf0 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\fs36 \cf18 #import \cf3 "ViewController.h"\cf18 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+\cf4 @import\cf0  MapKit;\
+\cf4 @interface\cf0  \cf2 ViewController\cf0  ()<\cf2 CLLocationManagerDelegate\cf0 ,\cf2 MKMapViewDelegate\cf0 ,\cf2 MKAnnotation\cf0 >\
+\{\cf2 MKMapView\cf0  *mapView;\}\
+\cf4 @end\cf0 \
+\cf4 @interface\cf0  MyAnnotation : \cf2 NSObject\cf0 <\cf2 MKAnnotation\cf0 >\
+\cf4 @property\cf0  (\cf4 nonatomic\cf0 )\cf2 CLLocationCoordinate2D\cf0  coordinate;\
+\cf4 @property\cf0  (\cf4 nonatomic\cf0 , \cf4 copy\cf0 ) \cf2 NSString\cf0  *title;\
+\cf4 @property\cf0  (\cf4 nonatomic\cf0 ,\cf4 copy\cf0 ) \cf2 NSString\cf0  *subtitle;\
+\cf4 @end\cf0 \
+\cf4 @implementation\cf0  MyAnnotation\
+\cf4 @end\cf0 \
+\cf4 @implementation\cf0  ViewController\
+- (\cf4 void\cf0 )viewDidLoad\
+\{[\cf4 super\cf0  \cf2 viewDidLoad\cf0 ];\
+ [\cf4 self\cf0  \cf2 creatmap\cf0 ];\
+ [\cf4 self\cf0  \cf2 addannotation\cf0 ];\
+\}\
+-(\cf4 void\cf0 )creatmap\
+\{   \cf5 //1
+\f1 \'cc\'ed\'bc\'d3\'b5\'d8\'cd\'bc
+\f2 <CLLocationManagerDelegate,MKMapViewDelegate,MKAnnotation>\cf0 \
+    \cf2 mapView\cf0  = [[\cf2 MKMapView\cf0  \cf2 alloc\cf0 ] \cf2 initWithFrame\cf0 :\cf4 self\cf0 .\cf2 view\cf0 .\cf2 bounds\cf0 ];\
+    \cf2 mapView\cf0 .\cf2 mapType\cf0  = \cf2 MKMapTypeStandard\cf0 ;\cf5 //    
+\f1 \'c9\'e8\'d6\'c3\'b1\'ea\'d7\'bc
+\f2 ,
+\f1 \'ce\'c0\'d0\'c7
+\f2 ,\cf0 \
+    \cf2 mapView\cf0 .\cf2 delegate\cf0  = \cf4 self\cf0 ;\
+    \cf2 mapView\cf0 .\cf2 showsUserLocation\cf0  = \cf4 YES\cf0 ;\cf5 //    
+\f1 \'ca\'c7\'b7\'f1\'d5\'b9\'ca\'be\'d3\'c3\'bb\'a7\'b5\'c4\'ce\'bb\'d6\'c3
+\f2 \cf0              \
+    \cf2 mapView\cf0 .\cf2 userLocation\cf0 .\cf2 title\cf0  = \cf3 @"
+\f1 \'ce\'d2\'d4\'da\'d5\'e2
+\f2 "\cf0 ; \cf5 //    
+\f1 \'c9\'e8\'d6\'c3\'d3\'c3\'bb\'a7\'b5\'c4\'b1\'ea\'cc\'e2
+\f2  
+\f1 \'ba\'cd\'d7\'d3\'b1\'ea\'cc\'e2
+\f2 \cf0 \
+    \cf2 mapView\cf0 .\cf2 userLocation\cf0 .\cf2 subtitle\cf0  = \cf3 @"
+\f1 \'d6\'a3\'d6\'dd
+\f2 "\cf0 ;\
+    [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :\cf2 mapView\cf0 ];\}\
+-(\cf4 void\cf0 )addannotation\cf5 //
+\f1 \'cf\'d4\'ca\'be\'d2\'bb\'b8\'f6\'b4\'f3\'cd\'b7\'d5\'eb\
+
+\f2 \cf0 \{ \cf2 MyAnnotation\cf0  *annotation = [[\cf2 MyAnnotation\cf0  \cf2 alloc\cf0 ] \cf2 init\cf0 ];\
+   annotation.\cf2 coordinate\cf0  = \cf2 CLLocationCoordinate2DMake\cf0 (34.7568711, 113.663221);\
+   annotation.\cf2 title\cf0  = \cf3 @"
+\f1 \'d3\'a1\'cf\'f3\'b3\'c7
+\f2 "\cf0 ;\
+   annotation.\cf2 subtitle\cf0  = \cf3 @"
+\f1 \'bb\'b6\'d3\'ad\'c4\'e3
+\f2 "\cf0 ;\
+   [\cf2 mapView\cf0  \cf2 addAnnotation\cf0 :annotation]; \cf5 //    
+\f1 \'cc\'ed\'bc\'d3\'b5\'bd
+\f2 mapview
+\f1 \'d6\'d0
+\f2 \cf0 \}\
+- (\cf2 MKAnnotationView\cf0  *)mapView:(\cf2 MKMapView\cf0  *)mapView viewForAnnotation:(\cf4 id\cf0 <\cf2 MKAnnotation\cf0 >)annotation\
+\{\cf4 if\cf0  ([annotation \cf2 isKindOfClass\cf0 :[\cf2 MyAnnotation\cf0  \cf2 class\cf0 ]])\
+    \{ \cf2 MKAnnotationView\cf0  *view = [mapView \cf2 dequeueReusableAnnotationViewWithIdentifier\cf0 :\cf3 @"id"\cf0 ];\
+       \cf4 if\cf0  (!view) \{\
+            view = [[\cf2 MKAnnotationView\cf0  \cf2 alloc\cf0 ] \cf2 initWithAnnotation\cf0 :annotation \cf2 reuseIdentifier\cf0 :\cf3 @"id"\cf0 ];\
+   view.\cf2 image\cf0  = [\cf2 UIImage\cf0  \cf2 imageNamed\cf0 :\cf3 @"arrest"\cf0 ];\
+   view.\cf2 rightCalloutAccessoryView\cf0  = [[\cf2 UIImageView\cf0  \cf2 alloc\cf0 ] \cf2 initWithImage\cf0 :[\cf2 UIImage\cf0  \cf2 imageNamed\cf0 :\cf3 @"head"\cf0 ]];\cf5 //            
+\f1 \'d7\'d4\'b6\'a8\'d2\'e5
+\f2  
+\f1 \'cd\'bc\'c6\'ac\
+
+\f2 \cf0    view.\cf2 rightCalloutAccessoryView\cf0 .\cf2 frame\cf0  = \cf2 CGRectMake\cf0 (0, 0, 40, 40);\cf5 // 
+\f1 \'d7\'d4\'b6\'a8\'d2\'e5\'cd\'bc\'c6\'ac\'b4\'f3\'d0\'a1
+\f2 \cf0 \
+   view.\cf2 canShowCallout\cf0  = \cf4 YES\cf0 ;\cf5 //
+\f1 \'ca\'c7\'b7\'f1\'d5\'b9\'ca\'be
+\f2 \cf0 \}\
+        \cf4 return\cf0  view;\}\}\
+   \cf4 return\cf0  \cf4 nil\cf0 ;\}\
+\cf5 //-------------------
+\f1 \'cb\'d1\'cb\'f7\'b5\'d8\'cd\'bc
+\f2 -----------\cf0 \
+- (\cf4 void\cf0 )addAnnotationInSystemApp\
+\{\cf5 //    
+\f1 \'bb\'f1\'c8\'a1\'b5\'b1\'c7\'b0\'b5\'c4\'ce\'bb\'d6\'c3
+\f2 \cf0 \
+       \cf2 MKMapItem\cf0  *item = [\cf2 MKMapItem\cf0  \cf2 mapItemForCurrentLocation\cf0 ];\cf5 // 
+\f1 \'b4\'f2\'bf\'aa\'cf\'b5\'cd\'b3\'b5\'d8\'cd\'bc
+\f2  
+\f1 \'b2\'a2\'cc\'ed\'bc\'d3\'b1\'ea\'d7\'a2
+\f2 \cf0 \
+        [item \cf2 openInMapsWithLaunchOptions\cf0 :@\{\cf2 MKLaunchOptionsMapTypeKey\cf0 : @(\cf2 MKMapTypeStandard\cf0 )\}];\
+    [\cf4 self\cf0  \cf2 addannotation\cf0 ];\
+\cf5 // 
+\f1 \'b8\'f9\'be\'dd\'cb\'d1\'cb\'f7\'b5\'c4\'d0\'c5\'cf\'a2
+\f2  
+\f1 \'d5\'d2\'b5\'bd\'be\'df\'cc\'e5\'b5\'c4\'ce\'bb\'d6\'c3
+\f2  
+\f1 \'b2\'a2\'c7\'d2\'cc\'ed\'bc\'d3\'b1\'ea\'d7\'a2
+\f2 \cf0 \
+    \cf5 //    
+\f1 \'b4\'f2\'bf\'aa\'cf\'b5\'cd\'b3
+\f2  
+\f1 \'d0\'e8\'d2\'aa
+\f2 item
+\f1 \'b6\'d4\'cf\'f3\'c8\'a5\'b5\'f7\'d3\'c3
+\f2 \cf0 \
+    \cf5 /*-----------
+\f1 \'cb\'d1\'cb\'f7\'b5\'d8\'cd\'bc\'cb\'d1\'cb\'f7\'b5\'d8\'cd\'bc\'cb\'d1\'cb\'f7\'b5\'d8\'cd\'bc\'cb\'d1\'cb\'f7\'b5\'d8\'cd\'bc
+\f2 ---------\
+     CLGeocoder *coder = [[CLGeocoder alloc] init];\
+    [coder geocodeAddressString:@"
+\f1 \'ba\'d3\'c4\'cf\'cd\'a8\'d0\'c5\'b2\'fa\'d2\'b5\'d4\'b0
+\f2 " completionHandler:^(NSArray *placemarks, NSError *error) \{\
+        [placemarks enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) \{\
+            CLPlacemark *mark = (CLPlacemark *)obj;\
+            MKPlacemark *placemark = [[MKPlacemark alloc] initWithPlacemark:mark];\
+            MKMapItem *item = [[MKMapItem alloc] initWithPlacemark:placemark];\
+            //            
+\f1 \'b4\'f2\'bf\'aa\'cf\'b5\'cd\'b3\'b5\'d8\'cd\'bc
+\f2 \
+            [item openInMapsWithLaunchOptions:@\{MKLaunchOptionsMapTypeKey: @(MKMapTypeStandard)\}];\
+        \}];\}];\
+     */\cf0 \
+ \}\
+\cf5 //3
+\f1 \'c2\'b7\'cf\'df\'c9\'e8\'b6\'a8
+\f2 --------------
+\f1 \'c9\'e8\'b6\'a8\'c2\'b7\'cf\'df
+\f2 -----------------\cf0 \
+-(\cf4 void\cf0 )navigationToBeiJing\
+\{ \cf2 NSMutableArray\cf0  *array = [[\cf2 NSMutableArray\cf0  \cf2 alloc\cf0 ] \cf2 init\cf0 ];\
+    \cf2 CLGeocoder\cf0  *coder = [[\cf2 CLGeocoder\cf0  \cf2 alloc\cf0 ] \cf2 init\cf0 ];\
+    [coder \cf2 geocodeAddressString\cf0 :\cf3 @"
+\f1 \'ba\'d3\'c4\'cf\'cd\'a8\'d0\'c5\'b2\'fa\'d2\'b5\'d4\'b0
+\f2 "\cf0  \cf2 completionHandler\cf0 :^(NSArray *\cf2 placemarks\cf0 , NSError *error) \{[placemarks \cf2 enumerateObjectsUsingBlock\cf0 :^(\cf4 id\cf0  obj, NSUInteger idx, \cf4 BOOL\cf0  *stop) \{\
+    \cf2 CLPlacemark\cf0  *mark = (\cf2 CLPlacemark\cf0  *)obj;\
+    \cf2 MKPlacemark\cf0  *placemark = [[\cf2 MKPlacemark\cf0  \cf2 alloc\cf0 ] \cf2 initWithPlacemark\cf0 :mark];\
+    \cf2 MKMapItem\cf0  *item = [[\cf2 MKMapItem\cf0  \cf2 alloc\cf0 ] \cf2 initWithPlacemark\cf0 :placemark];\
+    [array \cf2 addObject\cf0 :item];\
+     [coder \cf2 geocodeAddressString\cf0 :\cf3 @"
+\f1 \'b1\'b1\'be\'a9\'cc\'ec\'b0\'b2\'c3\'c5
+\f2 "\cf0  \cf2 completionHandler\cf0 :^(NSArray *\cf2 placemarks\cf0 , NSError *\cf2 error\cf0 ) \{ [placemarks \cf2 enumerateObjectsUsingBlock\cf0 :^(\cf4 id\cf0  obj, NSUInteger idx, \cf4 BOOL\cf0  *stop) \{\
+            \cf2 CLPlacemark\cf0  *mark = (\cf2 CLPlacemark\cf0  *)obj;\
+            \cf2 MKPlacemark\cf0  *placemark = [[\cf2 MKPlacemark\cf0  \cf2 alloc\cf0 ] \cf2 initWithPlacemark\cf0 :mark];\
+            \cf2 MKMapItem\cf0  *item = [[\cf2 MKMapItem\cf0  \cf2 alloc\cf0 ] \cf2 initWithPlacemark\cf0 :placemark];\
+            [array \cf2 addObject\cf0 :item];\
+            [\cf2 MKMapItem\cf0  \cf2 openMapsWithItems\cf0 :array \cf2 launchOptions\cf0 :@\{\cf2 MKLaunchOptionsDirectionsModeKey\cf0 : \cf2 MKLaunchOptionsDirectionsModeDriving\cf0 \}];\
+        \}]; \}]; \}]; \}];\}\
+\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f1\fs48 \cf14 \'ca\'d3\'c6\'b5\'b2\'a5\'b7\'c5
+\f2 1
+\fs36 \cf0 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+\cf5 //#import <MediaPlayer/MediaPlayer.h>\cf0 \
+-(\cf4 void\cf0 )createmoviePlay\
+\{\cf2 aplay\cf0  = [[\cf2 MPMoviePlayerController\cf0  \cf2 alloc\cf0 ]\cf2 init\cf0 ];\
+    \cf2 aplay\cf0 .\cf2 view\cf0 .\cf2 frame\cf0  = \cf2 CGRectMake\cf0 (10, 50, 100, 100);\
+    [\cf4 self\cf0 .\cf2 view\cf0  \cf2 addSubview\cf0 :\cf2 aplay\cf0 .\cf2 view\cf0 ];\
+    [[\cf2 NSNotificationCenter\cf0  \cf2 defaultCenter\cf0 ]\cf2 addObserver\cf0 :\cf4 self\cf0  \cf2 selector\cf0 :\cf4 @selector\cf0 (movieFinishedCallback:)\cf2 name\cf0 :\cf2 MPMoviePlayerPlaybackDidFinishNotification\cf0  \cf2 object\cf0 :\cf2 aplay\cf0 ]; \cf5 //
+\f1 \'b2\'a5\'b7\'c5\'cd\'ea\'ba\'f3\'b5\'c4\'cd\'a8\'d6\'aa
+\f2 \cf0 \
+\}\
+- (\cf4 IBAction\cf0 )creatmovieplayclick:(\cf4 id\cf0 )sender\
+\{ \cf2 NSString\cf0  *astr = [[\cf2 NSBundle\cf0  \cf2 mainBundle\cf0 ]\cf2 pathForResource\cf0 :\cf3 @"1"\cf0  \cf2 ofType\cf0 :\cf3 @"mp4"\cf0 ];\
+    \cf2 NSURL\cf0  *aurl = [\cf2 NSURL\cf0  \cf2 fileURLWithPath\cf0 :astr];\
+[\cf2 aplay\cf0  \cf2 setContentURL\cf0 :aurl];\
+[\cf2 aplay\cf0  \cf2 play\cf0 ];\}\
+\
+-(\cf4 void\cf0 )movieFinishedCallback:(\cf2 NSNotification\cf0 *)notify\
+\{  \cf2 MPMoviePlayerController\cf0 * theMovie = [notify \cf2 object\cf0 ];\
+    [[\cf2 NSNotificationCenter\cf0  \cf2 defaultCenter\cf0 ] \cf2 removeObserver\cf0 :\cf4 self\cf0  \cf2 name\cf0 : \cf2 MPMoviePlayerPlaybackDidFinishNotification\cf0   \cf2 object\cf0 :theMovie];\
+   [theMovie.\cf2 view\cf0  \cf2 removeFromSuperview\cf0 ];\
+\}\
+\cf5 //
+\f1\fs48 \cf14 \'ca\'d3\'c6\'b5\'b2\'a5\'b7\'c5
+\f2 2
+\fs36 \cf5 #import <MediaPlayer/MediaPlayer.h>
+\f1 \cf0 \'b7\'bd\'b7\'a8
+\f2 \cf5 2\
+\cf0 - (\cf4 IBAction\cf0 )creatmovieplay:(\cf4 id\cf0 )sender\
+\{\cf2 NSString\cf0  *astr = [[\cf2 NSBundle\cf0  \cf2 mainBundle\cf0 ]\cf2 pathForResource\cf0 :\cf3 @"1"\cf0  \cf2 ofType\cf0 :\cf3 @"mp4"\cf0 ];\
+    \cf2 NSURL\cf0  *aurl = [\cf2 NSURL\cf0  \cf2 fileURLWithPath\cf0 :astr];\
+    \cf2 MPMoviePlayerViewController\cf0  *moviePlayer =[[\cf2 MPMoviePlayerViewController\cf0  \cf2 alloc\cf0 ] \cf2 initWithContentURL\cf0 :aurl];\
+    [moviePlayer.\cf2 moviePlayer\cf0  \cf2 prepareToPlay\cf0 ];\
+    [\cf4 self\cf0  \cf2 presentMoviePlayerViewControllerAnimated\cf0 :moviePlayer];\
+    [moviePlayer.\cf2 moviePlayer\cf0  \cf2 setControlStyle\cf0 :\cf2 MPMovieControlStyleFullscreen\cf0 ];\
+    [moviePlayer.\cf2 view\cf0  \cf2 setBackgroundColor\cf0 :[\cf2 UIColor\cf0  \cf2 clearColor\cf0 ]];\
+    [moviePlayer.\cf2 view\cf0  \cf2 setFrame\cf0 :\cf4 self\cf0 .\cf2 view\cf0 .\cf2 bounds\cf0 ];\
+    [[\cf2 NSNotificationCenter\cf0  \cf2 defaultCenter\cf0 ] \cf2 addObserver\cf0 :\cf4 self\cf0  \cf2 selector\cf0 :\cf4 @selector\cf0 (movieFinishedCallback:)\
+                                                 \cf2 name\cf0 :\cf2 MPMoviePlayerPlaybackDidFinishNotification\cf0 \
+                                               \cf2 object\cf0 :moviePlayer.\cf2 moviePlayer\cf0 ];\}\
+-(\cf4 void\cf0 )movieFinishedCallback:(\cf2 NSNotification\cf0 *)notify\{\
+     \cf2 MPMoviePlayerController\cf0  *theMovie = [notify \cf2 object\cf0 ];\
+  [[\cf2 NSNotificationCenter\cf0  \cf2 defaultCenter\cf0 ] \cf2 removeObserver\cf0 :\cf4 self\cf0  \cf2 name\cf0 : \cf2 MPMoviePlayerPlaybackDidFinishNotification\cf0   \cf2 object\cf0 :theMovie];\
+    [\cf4 self\cf0  \cf2 dismissMoviePlayerViewControllerAnimated\cf0 ];\}\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\fs72 \cf5 // musicplayer
+\fs36 \cf0 \
+- (\cf4 void\cf0 )viewDidLoad\
+\{[\cf4 super\cf0  \cf2 viewDidLoad\cf0 ];\
+ [\cf4 self\cf0  \cf2 creatmusicplay\cf0 ];\}\
+-(\cf4 void\cf0 )creatmusicplay\
+\{\cf5 //
+\f1 \'cc\'ed\'bc\'d3\'bf\'e2\'ce\'c4\'bc\'fe
+\f2 QuartzCore.frameworkAVFoundation.framework\cf0 \
+    \cf2 player\cf0  = [[\cf2 AVAudioPlayer\cf0  \cf2 alloc\cf0 ] \cf2 initWithContentsOfURL\cf0 :[\cf2 NSURL\cf0  \cf2 fileURLWithPath\cf0 :[[\cf2 NSBundle\cf0  \cf2 mainBundle\cf0 ] \cf2 pathForResource\cf0 :\cf3 @"2"\cf0  \cf2 ofType\cf0 :\cf3 @"mp3"\cf0 ]] \cf2 error\cf0 :\cf4 nil\cf0 ];\
+    [\cf2 player\cf0  \cf2 prepareToPlay\cf0 ];\
+    \cf2 player\cf0 .\cf2 enableRate\cf0  = \cf4 YES\cf0 ;\
+    \cf2 player\cf0 .\cf2 meteringEnabled\cf0  = \cf4 YES\cf0 ;\
+    \cf2 player\cf0 .\cf2 delegate\cf0  = \cf4 self\cf0 ;  \}\
+- (\cf4 IBAction\cf0 )musicplay:(\cf4 id\cf0 )sender\
+\{   [\cf2 player\cf0  \cf2 play\cf0 ];\}\
+\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\fs48 \cf17 //
+\f1 \'cf\'e0\'b2\'e1 
+\f2 UIImagePickerController
+\fs36 \cf0 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\fs28 \cf0 - (\cf4 void\cf0 )openphotolibImage\
+\{\cf2 UIImagePickerController\cf0  *picker = [[\cf2 UIImagePickerController\cf0  \cf2 alloc\cf0 ] \cf2 init\cf0 ];\
+    picker.\cf2 sourceType\cf0  = \cf2 UIImagePickerControllerSourceTypePhotoLibrary\cf0 ;\
+    picker.\cf2 allowsEditing\cf0  = \cf4 YES\cf0 ;\
+    picker.\cf2 delegate\cf0  = \cf4 self\cf0 ;\
+    [\cf4 self\cf0  \cf2 presentViewController\cf0 :picker \cf2 animated\cf0 :\cf4 YES\cf0  \cf2 completion\cf0 :\cf4 nil\cf0 ];\
+    [picker \cf2 release\cf0 ];\}\
+- (\cf4 void\cf0 )imagePickerController:(\cf2 UIImagePickerController\cf0  *)picker didFinishPickingMediaWithInfo:(\cf2 NSDictionary\cf0  *)info\
+\{ \cf2 UIImage\cf0  *image = [info \cf2 objectForKey\cf0 :\cf2 UIImagePickerControllerEditedImage\cf0 ];\
+   [picker \cf2 dismissViewControllerAnimated\cf0 :\cf4 YES\cf0  \cf2 completion\cf0 :\cf4 nil\cf0 ];\}
+\fs48 \
+\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f1 \cf0 \'cd\'a8\'d1\'b6\'c2\'bc\
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\f2\fs26 \cf5 //
+\f1 \'b5\'bc\'c8\'eb\'bf\'e2\'ce\'c4\'bc\'fe
+\f2 AddressBook  AddressBookUI
+\fs48 \cf0 \
+\pard\tx1155\pardeftab1155\pardirnatural\partightenfactor0
+
+\fs28 \cf0 -(\cf4 void\cf0 )aa\
+\{[\cf4 self\cf0  \cf2 tongXunLu\cf0 ];\}\
+-(\cf4 void\cf0 )tongXunLu\
+\{\cf2 ab\cf0 =[[\cf2 ABPeoplePickerNavigationController\cf0  \cf2 alloc\cf0 ] \cf2 init\cf0 ];\
+\cf2 ab\cf0 .\cf2 peoplePickerDelegate\cf0 =\cf4 self\cf0 ;\
+[\cf4 self\cf0  \cf2 presentModalViewController\cf0 :\cf2 ab\cf0  \cf2 animated\cf0 :\cf4 YES\cf0 ];\}\
+- (\cf4 void\cf0 )peoplePickerNavigationControllerDidCancel:(\cf2 ABPeoplePickerNavigationController\cf0  *)peoplePicker\
+\{[\cf4 self\cf0  \cf2 dismissModalViewControllerAnimated\cf0 :\cf4 YES\cf0 ];\}\
+- (\cf4 BOOL\cf0 )peoplePickerNavigationController:(\cf2 ABPeoplePickerNavigationController\cf0  *)peoplePicker shouldContinueAfterSelectingPerson:(\cf2 ABRecordRef\cf0 )person\
+\{   \cf2 muDic\cf0 =[[\cf2 NSMutableDictionary\cf0  \cf2 alloc\cf0 ] \cf2 init\cf0 ];\
+    \cf2 ABMutableMultiValueRef\cf0  phoneMulti = \cf2 ABRecordCopyValue\cf0 (person, \cf2 kABPersonPhoneProperty\cf0 );\
+    \cf2 NSString\cf0  * select =  (\cf2 NSString\cf0  *)\cf2 ABRecordCopyCompositeName\cf0 (person);\
+    \cf4 for\cf0  (\cf4 int\cf0  i = 0; i < \cf2 ABMultiValueGetCount\cf0 (phoneMulti); i++) \{\
+    \cf2 NSString\cf0  *aPhone = [(\cf2 NSString\cf0 *)\cf2 ABMultiValueCopyValueAtIndex\cf0 (phoneMulti, i) \cf2 autorelease\cf0 ];\
+		\cf2 NSString\cf0  *aLabel = [(\cf2 NSString\cf0 *)\cf2 ABMultiValueCopyLabelAtIndex\cf0 (phoneMulti,i) \cf2 autorelease\cf0 ];\
+        \cf2 NSRange\cf0  ran=\cf2 NSMakeRange\cf0 (4, [aLabel \cf2 length\cf0 ]-8);\
+		\cf4 if\cf0 ([aLabel \cf2 hasPrefix\cf0 :\cf3 @"_"\cf0 ])\{\
+			aLabel=[aLabel \cf2 substringWithRange\cf0 :ran];\}\
+		[\cf2 muDic\cf0  \cf2 setObject\cf0 :aPhone \cf2 forKey\cf0 :aLabel];\}\
+    \cf2 NSLog\cf0 (\cf3 @"---%@==\\n"\cf0 ,\cf2 muDic\cf0 );\
+	\cf4 return\cf0  \cf4 NO\cf0 ;\
+\}\
+- (\cf4 BOOL\cf0 )peoplePickerNavigationController:(\cf2 ABPeoplePickerNavigationController\cf0  *)peoplePicker shouldContinueAfterSelectingPerson:(\cf2 ABRecordRef\cf0 )person property:(\cf2 ABPropertyID\cf0 )property identifier:(\cf2 ABMultiValueIdentifier\cf0 )identifier\
+\{\cf4 return\cf0  \cf4 YES\cf0 ;\}
+\fs48 \
+}
